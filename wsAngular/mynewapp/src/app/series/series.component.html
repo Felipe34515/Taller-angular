@@ -1,26 +1,35 @@
 
-<tr *ngFor="let c of series">
-  <td>
-    <dd>{{c.id}}</dd>
-  </td>
-  <td>
-    <dd>{{c.nombre}}</dd>
-  </td>
-  <td>
-    <dd>{{c.canal}}</dd>
-  </td>
-  <td>
-    <dd>{{c.temporadas}}</dd>
-  </td>
-  <td>
-    <dd>{{c.descripcion}}</dd>
-  </td>
-  <td>
-    <dd>{{c.pagina}}</dd>
-  </td>
-  <td>
-    <dd>{{c.imagen}}</dd>
-  </td>
-</tr>
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">#</th>
+          <th class="h4">Name</th>
+          <th class="h4">Channel</th>
+          <th class="h4">Seasons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of series">
+          <td>
+            <dd>{{c.id}}</dd>
+          </td>
+          <td>
+            <dd>{{c.nombre}}</dd>
+          </td>
+          <td>
+            <dd>{{c.canal}}</dd>
+          </td>
+          <td>
+            <dd>{{c.temporadas}}</dd>
+          </td>
+        </tr>
 
+
+
+      </tbody>
+    </table>
+  </div>
+</div>
 
